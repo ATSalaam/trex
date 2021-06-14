@@ -115,7 +115,7 @@ function draw() {
     //spawn obstacles on the ground
     spawnObstacles();
     
-    if(obstaclesGroup.isTouching(trex)){
+    if(obstaclesGroup.isTouching(trex) || score === 2000){
         //gameState = END;
       trex.velocityY = -12;
       jumpSound.play();
