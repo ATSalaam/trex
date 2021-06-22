@@ -116,10 +116,10 @@ function draw() {
     spawnObstacles();
     
     if(obstaclesGroup.isTouching(trex)){
-        //gameState = END;
-      trex.velocityY = -12;
-      jumpSound.play();
-      //dieSound.play();
+        gameState = END;
+      //trex.velocityY = -12;
+      //jumpSound.play();
+      dieSound.play();
     }
   }
    else if (gameState === END) {
